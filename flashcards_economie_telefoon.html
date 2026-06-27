@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flashcards Economie</title>
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --text: #182033;
+    --muted: #6a7280;
+    --accent: #1e66f5;
+    --shadow: rgba(20, 30, 55, .14);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 14px 16px;
+    background: rgba(246,247,251,.94);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e4e7ef;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 0 0 4px;
+  }
+  header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  main {
+    padding: 16px;
+    display: grid;
+    gap: 16px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .card {
+    min-height: 230px;
+    perspective: 1000px;
+    cursor: pointer;
+    outline: none;
+  }
+  .inner {
+    position: relative;
+    width: 100%;
+    min-height: 230px;
+    transition: transform .45s;
+    transform-style: preserve-3d;
+  }
+  .card.flipped .inner {
+    transform: rotateY(180deg);
+  }
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    min-height: 230px;
+    padding: 22px;
+    border-radius: 22px;
+    background: var(--card);
+    box-shadow: 0 8px 26px var(--shadow);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .back {
+    transform: rotateY(180deg);
+    border: 2px solid #dbe6ff;
+  }
+  .label {
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-size: clamp(22px, 6vw, 32px);
+    line-height: 1.18;
+    margin: 0;
+  }
+  .back p:not(.hint) {
+    font-size: clamp(20px, 5.4vw, 28px);
+    line-height: 1.28;
+    margin: 0;
+  }
+  .hint {
+    margin: 22px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    padding: 16px 0 28px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Flashcards economie</h1>
+  <p>43 begrippen · tik op een kaart om te draaien</p>
+</header>
+<main>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat zijn collectieve goederen?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Voorzieningen waar alle burgers gebruik van kunnen maken en die door de overheid worden betaald.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is de collectieve sector?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De overheid en instellingen voor sociale zekerheid.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is innovatie?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De ontwikkeling van nieuwe producten en productiemethodes.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is marktwerking?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Aanbieders van producten concurreren met elkaar op kwaliteit en prijs.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is de particuliere sector?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Alle burgers en bedrijven.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is privatisering?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De overheid verkoopt een dienst of activiteit aan een particulier bedrijf.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat zijn actieven?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Mensen die hun eigen inkomen verdienen.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is het sociaal minimum?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Het bedrag dat je minimaal nodig hebt om van te leven.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat zijn sociale voorzieningen?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Uitkeringen die de overheid uit belastinggeld betaalt, zoals bijstand, zorgtoeslag en huurtoeslag.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is het solidariteitsbeginsel?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Mensen met een inkomen staan een deel daarvan af voor mensen die zelf geen inkomen kunnen verdienen.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is een volksverzekering?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Een uitkering waar iedere inwoner in bepaalde gevallen recht op heeft, zoals AOW en ANW.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is een werknemersverzekering?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Een uitkering voor mensen die in loondienst werken of hebben gewerkt, zoals WW en WIA.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat zijn directe belastingen?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Belastingen die je rechtstreeks aan de overheid betaalt, zoals inkomstenbelasting en vennootschapsbelasting.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat zijn indirecte belastingen?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Belastingen die verwerkt zijn in de prijs van een product, zoals accijns en btw.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is inkomstenbelasting?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Belasting die iedereen met een inkomen moet betalen.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat zijn niet-belastingontvangsten?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Andere inkomsten van de overheid, zoals boetes en winst uit overheidsbedrijven.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is vennootschapsbelasting?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Belasting die bv’s en nv’s betalen over hun winst.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is een begrotingsoverschot?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De verwachte uitgaven zijn lager dan de verwachte inkomsten.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is een begrotingstekort?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De verwachte uitgaven zijn hoger dan de verwachte inkomsten.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is de Miljoenennota?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Een toelichting op de rijksbegroting waarin de regering uitlegt welke keuzes zij gemaakt heeft.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is de rijksbegroting?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De verwachte inkomsten en uitgaven van het Rijk in het komende jaar.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is staatsschuld?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Schuld van de overheid die is ontstaan door geld te lenen in jaren met een begrotingstekort.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is de betalingsbalans?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Een overzicht van alle ontvangsten uit het buitenland en alle betalingen aan het buitenland.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is nationaal inkomen?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Alle inkomens van een land bij elkaar opgeteld.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is een open economie?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Een land dat veel nationaal inkomen verdient met export en veel besteedt aan import.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is wederuitvoer?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Goederen worden na invoer onbewerkt doorverkocht aan het buitenland.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is contingentering?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Een importquota: er mag een maximumaantal producten worden ingevoerd.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is exportsubsidie?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De overheid geeft subsidie aan exporterende bedrijven zodat zij goedkoper aan het buitenland kunnen verkopen.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is globalisering?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De toename van wereldwijde contacten en handel.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat zijn importheffingen?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Invoerheffingen of douanerechten: belasting op ingevoerde producten.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is internationale arbeidsverdeling?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Ieder land maakt producten waarin het goed is.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is internationale concurrentiepositie?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Hoe goed een land beter en/of goedkoper kan produceren dan andere landen.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is een invoerverbod?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Bepaalde goederen mogen helemaal niet worden ingevoerd.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat zijn protectiemaatregelen?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Maatregelen om productie en werkgelegenheid in eigen land te beschermen tegen concurrentie uit andere landen.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is de Europese Unie?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Een groep Europese landen die onder andere economisch samenwerken.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is de Europese Centrale Bank?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De centrale bank van de eurozone.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is de Economische en Monetaire Unie?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Een groep landen binnen de EU met een gezamenlijke munteenheid: de euro.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is de interne markt?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De gemeenschappelijke markt binnen de EU, zonder handelsgrenzen tussen lidstaten.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is fairtrade?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Handel waarbij producenten in ontwikkelingslanden een betere prijs krijgen voor hun producten.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is inkomen per hoofd van de bevolking?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Het gemiddelde inkomen per inwoner van een land.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is noodhulp?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Hulp in noodsituaties, zoals voedsel, drinkwater, tenten en medicijnen.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is structurele hulp?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>Hulp aan ontwikkelingslanden met als doel dat zij op lange termijn economisch zelfstandig worden.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<section class="card" tabindex="0" onclick="this.classList.toggle('flipped')" onkeypress="if(event.key==='Enter'||event.key===' ') this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front">
+          <div class="label">Vraag</div>
+          <h2>Wat is een vicieuze cirkel?</h2>
+          <p class="hint">Tik om het antwoord te zien</p>
+        </div>
+        <div class="back">
+          <div class="label">Antwoord</div>
+          <p>De oorzaak van het ene probleem is het gevolg van een ander probleem.</p>
+          <p class="hint">Tik om terug te draaien</p>
+        </div>
+      </div>
+    </section>
+<div class="footer">Tip: zet je telefoon horizontaal als een antwoord lang is.</div>
+</main>
+</body>
+</html>
